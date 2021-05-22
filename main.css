@@ -7,7 +7,7 @@ html,
 body {
   height: 100vh;
   font-family: "Poppins";
-  background-color: #000;
+  background-color: #000000;
 }
 body {
   overflow-x: hidden;
@@ -28,12 +28,15 @@ body {
 }
 
 h1 {
-  font-size: 8rem;
+  font-size: 6rem;
   text-transform: uppercase;
   color: white;
 }
 section {
   height: 100vh;
+}
+canvas {
+  position: fixed;
 }
 
 
