@@ -11,6 +11,7 @@ body {
 }
 body {
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .webgl {
@@ -22,21 +23,69 @@ body {
 }
 
 .container {
-  height: 100vh;
+  height: 100%;
   display: grid;
-  place-items: center;
+  z-index: 10;
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 2rem;
   text-transform: uppercase;
-  color: white;
+  z-index: inherit;
+  padding: 12px;
+  text-align: center;
 }
+h2 {
+  text-align: center;
+  padding: 6px;
+}
+
 section {
   height: 100vh;
 }
 canvas {
   position: fixed;
+}
+
+.box {
+  height: 5.3vh;
+  width: 40%;
+  left: 30%;
+  position: sticky;
+  z-index: 90;
+}
+.box-top {
+  border-radius: 10% 10% 10% 10% / 0% 0% 92% 92%;
+  background-color: aliceblue;
+  top: 0;
+}
+.box-bottom {
+  border-radius: 10% 10% 10% 10% / 92% 92% 0% 0%;
+  background-color: aliceblue;
+  bottom: 0;
+}
+.fa {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+a {
+  text-decoration: none;
+  color: 551a8b;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  .box {
+    height: 6vh;
+    width: 100%;
+    left: 0%;
+    position: sticky;
+  }
+  .box-bottom {
+    height: 8vh;
+  }
 }
 
 
